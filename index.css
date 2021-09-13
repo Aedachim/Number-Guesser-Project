@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    margin: 0 auto;
+    padding: 3px;
+
+}
+h1 {
+    font-size: 3rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+
+/*section top*/
+
+.containertop {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*section middle*/
+
+
+.containermiddle {
+    width: 100%;
+    height: 40rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxfield-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    height: 30rem;
+    background-color: #808080;
+    margin-right: 1rem;
+}
+
+.boxfield-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 30%;
+    height: 30rem;
+    border: 1px solid #808080;
+    margin-left: 1rem;
+}
+
+
+.containermiddle .boxfield-left .who {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containermiddle .boxfield-left .points {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.containermiddle .boxfield-left .estimate {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.containermiddle .boxfield-left .estimate p {
+    font-size: 4rem;
+}
+
+.containermiddle .boxfield-right .who {
+    display: flex;
+    justify-content: center;
+}
+
+.containermiddle .boxfield-right .points {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.containermiddle .boxfield-right .estimate {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+
+
+/* adjust next round */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button input {
+    font-size: bold;
+}
+
+/* button */
+
+.primary-button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 5px;
+}
+
+.primary-button:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.primary-button:active {
+    background-color: aqua;
+    margin-top: 5px;
+    box-shadow: 0px 0px;
+}
+
+.primary-button:visited {
+    background-color: aqua;
+}
+
+.secondary-button {
+    font-size: bold;
+    color: #ffffff;
+    background-color: blue;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 10px
+
+}
+
+.secondary-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: blue;
+}
+
+.secondary-button:active {
+    background-color: white;
+    color: blue;
+    margin-top: 5px;
+    box-shadow: 0px 0px;
+}
+
+.secondary-button:visited {
+    background-color: white;
+    color: blue;
+}
+
+/*with the :focus selector the field increases when you click in this field(webkit-transition*/
+
+input[type=number] {
+    width: 100px;
+    -webkit-transition: width .35s ease-in-out;
+}
+
+input[type=number]:focus {
+    width: 250px;
+}
+
+/* footer */
+
+.summary {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    border-top: 3px solid black;
+    margin: 2rem;
+    background-color: #808080;
+}
+
+
+.summary .area {
+    width: 30%;
+    margin: 0px 5px;
+    justify-content: space-between;
+}
